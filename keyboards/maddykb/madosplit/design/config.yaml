@@ -1,0 +1,222 @@
+units:
+  # Proxy Spacing Variables
+  kx: cx
+  ky: cy
+  # Padding Variables
+  px: kx + 2
+  py: ky + 2
+  step: .5
+points:
+  zones:
+    Main_Board:
+      anchor:
+        shift: [100, -100]
+      key:
+        padding: 1ky+1
+        spread: 1kx+1
+      columns:
+        pinky:
+          key.column_net: P18
+          key.stagger: 2
+          key.splay:
+        ring:
+          key.stagger: 6
+          key.column_net: P15
+        middle:
+          key.stagger: 2.5
+          key.column_net: P14
+        index:
+          key.stagger: -2.5
+          key.column_net: P16
+        inner:
+          key.stagger: -2.5
+          key.column_net: P10
+      rows:
+        bot:
+          row_net: P7
+        mid:
+          row_net: P6
+        top:
+          row_net: P5
+        num:
+          row_net: P4
+    reach:
+      anchor:
+        ref: Main_Board_inner_mid
+        shift: [1kx + 1step, -0.75ky]
+      columns:
+        reach:
+          key:
+            column_net: P10
+
+      rows:
+        reach:
+          rotate: 0
+          row_net: P8
+          key:
+
+    thumb:
+      anchor:
+        ref: Main_Board_inner_bot
+        shift: [-2.65kx, -1ky]
+      columns:
+        tucky1:
+          key:
+            stagger: -1
+            spread: kx+1
+            column_net: P15
+            #name: thumb_tucky1
+        tucky2:
+          key:
+            spread: kx+1
+            column_net: P14
+            name: thumb_tucky2
+        tucky3:
+          key:
+            stagger: -2
+            spread: kx+1
+            column_net: P16
+            name: thumb_tucky3
+        reachy:
+
+          key:
+            stagger: -4
+            shift: [0.35kx,1]
+            width: 1.5kx
+            rotate: -115
+            column_net: P10
+
+      rows:
+        stretch:
+          row_net: P9
+          key:
+            name: thumb
+  mirror: &mirror
+    ref: Main_Board_inner_num
+    distance: 5.5kx
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [px, py]
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5,ky-0.5]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: Main_Board_pinky_num
+          shift: [-0.55px,0.5py]
+        - ref: Main_Board_pinky_bot
+          shift: [-0.55px,-0.5py]
+        - ref: Main_Board_pinky_bot
+          shift: [-0.1px,-0.65py]
+        - ref: thumb_tucky1_stretch
+          shift: [-0.5py,-0.7py]
+        - ref: thumb_reachy_stretch
+          shift: [0.55px,0.95py]
+        - ref: reach_reach_reach
+          shift: [0.7px,-0.5py]
+        - ref: Main_Board_inner_num
+          shift: [2px,0.5py]
+        - ref: Main_Board_inner_num
+          shift: [0.5px,0.5py]
+        - ref: Main_Board_middle_num
+          shift: [0,0.6py]
+        - ref: Main_Board_ring_num
+          shift: [-0.5px,0.5py]
+      fillet: 2
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
+pcbs:
+  MadoSplit:
+    outlines:
+      main:
+        outline: board
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+        adjust:
+          rotate: 180
+      diode:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [-4, 5]
+          rotate: 270
+      ProMicro:
+        what: promicro
+        params:
+          orientation: "up"
+        where:
+          ref: Main_Board_inner_num
+          shift: [2+kx,-0.5ky]
+          rotate: -90
+      holeTopLeft:
+        what: mountinghole
+        where:
+          ref: Main_Board_pinky_num
+          shift: [5, 0.68ky]
+      holeBotLeft:
+        what: mountinghole
+        where:
+          ref: Main_Board_pinky_bot
+          shift: [9, -0.8ky]
+      holeBotRight:
+        what: mountinghole
+        where:
+          ref: Main_Board_inner_bot
+          shift: [4, -0.85ky]
+      holeTopRight:
+        what: mountinghole
+        where:
+          ref: Main_Board_inner_num
+          shift: [2+1.75kx,-0.7ky]
+      TRRS:
+        what: trrs
+        params:
+          A: GND
+          B: GND
+          C: P0
+          D: VCC
+        where:
+          ref: Main_Board_inner_num
+          shift: [2kx,0.55ky- 0.4]
+      Reset:
+        what: button
+        params:
+          from: RST
+          to: GND
+        where:
+          ref: Main_Board_inner_num
+          shift: [1+1.75kx,-1.2ky]
+          rotate: 90
+      Oled:
+        what: oled
+        params:
+          side: "F"
+          SDA: P3
+          SCL: P2
+        where:
+          ref: Main_Board_inner_num
+          shift: [2+kx-6,-0.5ky-21]
+          rotate: 90
+
+cases:
+  bottom:
+    - name: combo
+      extrude: 2
