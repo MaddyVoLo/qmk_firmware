@@ -256,6 +256,26 @@
       },
       {
         "netclass": "Default",
+        "pattern": "P19"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_num"
+      },
+      {
+        "netclass": "Default",
         "pattern": "P18"
       },
       {
@@ -373,6 +393,22 @@
       {
         "netclass": "Default",
         "pattern": "reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_num"
       },
       {
         "netclass": "Default",
@@ -524,7 +560,1623 @@
       },
       {
         "netclass": "Default",
+        "pattern": "P1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": ""
+      },
+      {
+        "netclass": "Default",
         "pattern": "P19"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P18"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P15"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P14"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P16"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "reach_reach"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky1_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky2_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky3_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_reach_reach"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky1_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky2_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky3_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "RAW"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "RST"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P21"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P20"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": ""
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P19"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P18"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P15"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P14"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P16"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "reach_reach"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky1_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky2_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky3_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_reach_reach"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky1_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky2_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky3_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "RAW"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "RST"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P21"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P20"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": ""
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P19"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P18"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P15"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P14"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P16"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "reach_reach"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky1_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky2_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky3_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_reach_reach"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky1_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky2_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky3_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "RAW"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "RST"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P21"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P20"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": ""
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P19"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P18"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P15"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P14"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P16"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "reach_reach"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky1_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky2_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky3_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_reach_reach"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky1_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky2_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky3_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "RAW"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "RST"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P21"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P20"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P1"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P0"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P2"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P3"
+      },
+      {
+        "netclass": "Default",
+        "pattern": ""
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P19"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mod_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P18"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P15"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P14"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P16"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P10"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "reach_reach"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky1_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky2_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "tucky3_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_mod_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_pinky_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_ring_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_middle_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_index_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_bot"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_mid"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_top"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_inner_num"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_reach_reach"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky1_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky2_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_tucky3_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "mirror_reachy_stretch"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P7"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P6"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P5"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P8"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P9"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "RAW"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "RST"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P21"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "P20"
       },
       {
         "netclass": "Default",

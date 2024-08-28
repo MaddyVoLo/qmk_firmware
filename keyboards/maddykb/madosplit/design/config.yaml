@@ -15,6 +15,8 @@ points:
         padding: 1ky+1
         spread: 1kx+1
       columns:
+        mod:
+          key.column_net: P19
         pinky:
           key.column_net: P18
           key.stagger: 2
@@ -43,7 +45,7 @@ points:
     reach:
       anchor:
         ref: Main_Board_inner_mid
-        shift: [1kx + 1step, -0.75ky]
+        shift: [1kx + 2step, -0.75ky]
       columns:
         reach:
           key:
@@ -107,11 +109,11 @@ outlines:
     - what: polygon
       operation: stack
       points:
-        - ref: Main_Board_pinky_num
+        - ref: Main_Board_mod_num
           shift: [-0.55px,0.5py]
-        - ref: Main_Board_pinky_bot
+        - ref: Main_Board_mod_bot
           shift: [-0.55px,-0.5py]
-        - ref: Main_Board_pinky_bot
+        - ref: Main_Board_mod_bot
           shift: [-0.1px,-0.65py]
         - ref: thumb_tucky1_stretch
           shift: [-0.5py,-0.7py]
@@ -126,6 +128,31 @@ outlines:
         - ref: Main_Board_middle_num
           shift: [0,0.6py]
         - ref: Main_Board_ring_num
+          shift: [-0.5px,0.5py]
+      fillet: 2
+  boardR:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: mirror_Main_Board_mod_num
+          shift: [-0.55px,0.5py]
+        - ref: mirror_Main_Board_mod_bot
+          shift: [-0.55px,-0.5py]
+        - ref: mirror_Main_Board_mod_bot
+          shift: [-0.1px,-0.65py]
+        - ref: mirror_thumb_tucky1_stretch
+          shift: [-0.5py,-0.7py]
+        - ref: mirror_thumb_reachy_stretch
+          shift: [0.55px,0.95py]
+        - ref: mirror_reach_reach_reach
+          shift: [0.7px,-0.5py]
+        - ref: mirror_Main_Board_inner_num
+          shift: [2px,0.5py]
+        - ref: mirror_Main_Board_inner_num
+          shift: [0.5px,0.5py]
+        - ref: mirror_Main_Board_middle_num
+          shift: [0,0.6py]
+        - ref: mirror_Main_Board_ring_num
           shift: [-0.5px,0.5py]
       fillet: 2
   combo:
@@ -215,7 +242,88 @@ pcbs:
           ref: Main_Board_inner_num
           shift: [2+kx-6,-0.5ky-21]
           rotate: 90
-
+  MadoSplitR:
+    outlines:
+      main:
+        outline: boardR
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+        adjust:
+          rotate: 180
+      diode:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [4, 5]
+          rotate: 90
+      ProMicro:
+        what: promicro
+        params:
+          orientation: "down"
+        where:
+          ref: mirror_Main_Board_inner_num
+          shift: [2+kx,-0.5ky]
+          rotate: 90
+      holeTopLeft:
+        what: mountinghole
+        where:
+          ref: mirror_Main_Board_pinky_num
+          shift: [5, 0.68ky]
+      holeBotLeft:
+        what: mountinghole
+        where:
+          ref: mirror_Main_Board_pinky_bot
+          shift: [9, -0.8ky]
+      holeBotRight:
+        what: mountinghole
+        where:
+          ref: mirror_Main_Board_inner_bot
+          shift: [4, -0.85ky]
+      holeTopRight:
+        what: mountinghole
+        where:
+          ref: mirror_Main_Board_inner_num
+          shift: [2+1.75kx,-0.7ky]
+      TRRS:
+        what: trrs
+        params:
+          A: GND
+          B: GND
+          C: P0
+          D: VCC
+        where:
+          ref: mirror_Main_Board_inner_num
+          shift: [2kx,0.55ky- 0.4]
+      Reset:
+        what: button
+        params:
+          from: RST
+          to: GND
+        where:
+          ref: mirror_Main_Board_inner_num
+          shift: [1+1.75kx,-1.2ky]
+          rotate: 90
+      Oled:
+        what: oled
+        params:
+          side: "F"
+          SDA: P3
+          SCL: P2
+        where:
+          ref: mirror_Main_Board_inner_num
+          shift: [2+kx-6,-0.5ky-21]
+          rotate: 90
 cases:
   bottom:
     - name: combo
