@@ -1,0 +1,10 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+B1,SW_TACT_ALPS_SKQGABE010,1,,
+"D1, D10, D11, D12, D13, D14, D15, D16, D17, D18, D19, D2, D20, D21, D22, D23, D24, D25, D26, D27, D28, D29, D3, D4, D5, D6, D7, D8, D9",Diode_SOD-123,29,,
+MCU1,ProMicro,1,,
+OLED1,OLED_128x32,1,OLED,
+"RES1, RES2",0402,2,R_0402_1005Metric,
+"S1, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19, S2, S20, S21, S22, S23, S24, S25, S26, S27, S28, S3, S4, S5, S6, S7, S8, S9",Hotswap_Choc_V1V2_1.00u,28,,
+S29,Hotswap_Choc_V1V2_1.50u,1,,
+TRRS1,TRRS_PJ-320A,1,TRRS_PJ-320A,
+"_1, _2, _3, _4",MountingHole_2.2mm_M2_Pad_Via,4,,

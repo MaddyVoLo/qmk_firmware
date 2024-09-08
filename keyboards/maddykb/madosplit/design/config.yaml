@@ -6,6 +6,12 @@ units:
   px: kx + 2
   py: ky + 2
   step: .5
+  # Double Padding Variables
+  dpx: kx + 4
+  dpy: ky + 4
+  # Defaults to M2 Screws
+  screwSize: 1.5
+  standoffSize: 2.5
 points:
   zones:
     Main_Board:
@@ -130,6 +136,73 @@ outlines:
         - ref: Main_Board_ring_num
           shift: [-0.5px,0.5py]
       fillet: 2
+  BigBoardL:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: Main_Board_mod_num
+          shift: [-0.55dpx,0.5dpy]
+        - ref: Main_Board_mod_bot
+          shift: [-0.55dpx,-0.5dpy]
+        - ref: Main_Board_mod_bot
+          shift: [-0.1dpx,-0.65dpy]
+        - ref: thumb_tucky1_stretch
+          shift: [-0.5dpy,-0.7dpy]
+        - ref: thumb_reachy_stretch
+          shift: [0.55dpx,0.95dpy]
+        - ref: reach_reach_reach
+          shift: [0.7dpx,-0.5dpy]
+        - ref: Main_Board_inner_num
+          shift: [2dpx,0.5dpy]
+        - ref: Main_Board_inner_num
+          shift: [0.5dpx,0.5dpy]
+        - ref: Main_Board_middle_num
+          shift: [0,0.6dpy]
+        - ref: Main_Board_ring_num
+          shift: [-0.5dpx,0.5dpy]
+      fillet: 2
+  mounting:
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [Main_Board_pinky_num]
+        shift: [5, 0.68ky]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [Main_Board_pinky_bot]
+        shift: [9, -0.8ky]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [Main_Board_inner_bot]
+        shift: [4, -0.85ky]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [Main_Board_inner_num]
+        shift: [2+1.75kx,-0.7ky]
+  standoff:
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [Main_Board_pinky_num]
+        shift: [5, 0.68ky]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [Main_Board_pinky_bot]
+        shift: [9, -0.8ky]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [Main_Board_inner_bot]
+        shift: [4, -0.85ky]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [Main_Board_inner_num]
+        shift: [2+1.75kx,-0.7ky]
   boardR:
     - what: polygon
       operation: stack
@@ -155,6 +228,73 @@ outlines:
         - ref: mirror_Main_Board_ring_num
           shift: [-0.5px,0.5py]
       fillet: 2
+  BigBoardR:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: mirror_Main_Board_mod_num
+          shift: [-0.55dpx,0.5dpy]
+        - ref: mirror_Main_Board_mod_bot
+          shift: [-0.55dpx,-0.5dpy]
+        - ref: mirror_Main_Board_mod_bot
+          shift: [-0.1dpx,-0.65dpy]
+        - ref: mirror_thumb_tucky1_stretch
+          shift: [-0.5dpy,-0.7dpy]
+        - ref: mirror_thumb_reachy_stretch
+          shift: [0.55dpx,0.95dpy]
+        - ref: mirror_reach_reach_reach
+          shift: [0.7dpx,-0.5dpy]
+        - ref: mirror_Main_Board_inner_num
+          shift: [2dpx,0.5dpy]
+        - ref: mirror_Main_Board_inner_num
+          shift: [0.5dpx,0.5dpy]
+        - ref: mirror_Main_Board_middle_num
+          shift: [0,0.6dpy]
+        - ref: mirror_Main_Board_ring_num
+          shift: [-0.5dpx,0.5dpy]
+      fillet: 2
+  mountingR:
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [mirror_Main_Board_pinky_num]
+        shift: [5, 0.68ky]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [mirror_Main_Board_pinky_bot]
+        shift: [9, -0.8ky]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [mirror_Main_Board_inner_bot]
+        shift: [4, -0.85ky]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [mirror_Main_Board_inner_num]
+        shift: [2+1.75kx,-0.7ky]
+  standoffR:
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [mirror_Main_Board_pinky_num]
+        shift: [5, 0.68ky]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [mirror_Main_Board_pinky_bot]
+        shift: [9, -0.8ky]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [mirror_Main_Board_inner_bot]
+        shift: [4, -0.85ky]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [mirror_Main_Board_inner_num]
+        shift: [2+1.75kx,-0.7ky]
   combo:
     - name: board
     - operation: subtract
@@ -325,6 +465,77 @@ pcbs:
           shift: [2+kx-6,-0.5ky-21]
           rotate: 90
 cases:
+
   bottom:
     - name: combo
       extrude: 2
+  xlBottom:
+    - name: BigBoardL
+      extrude: 1
+  _outerWall:
+    - name: BigBoardL
+      extrude: 4
+  _innerWall:
+    - name: board
+      extrude: 4
+  wall:
+    - what: case
+      name: _outerWall
+      operation: add
+    - what: case
+      name: _innerWall
+      operation: subtract
+  _holes:
+    - name: mounting
+      extrude: 4
+  _standoffs:
+    - name: standoff
+      extrude: 4
+  case:
+    - what: case
+      name: _standoffs
+      operation: add
+    - what: case
+      name: _holes
+      operation: subtract
+    - what: case
+      name: xlBottom
+      operation: add
+    - what: case
+      name: wall
+      operation: add
+  xlBottomR:
+    - name: BigBoardR
+      extrude: 1
+  _outerWallR:
+    - name: BigBoardR
+      extrude: 4
+  _innerWallR:
+    - name: boardR
+      extrude: 4
+  wallR:
+    - what: case
+      name: _outerWallR
+      operation: add
+    - what: case
+      name: _innerWallR
+      operation: subtract
+  _holesR:
+    - name: mountingR
+      extrude: 4
+  _standoffsR:
+    - name: standoffR
+      extrude: 4
+  caseR:
+    - what: case
+      name: _standoffsR
+      operation: add
+    - what: case
+      name: _holesR
+      operation: subtract
+    - what: case
+      name: xlBottomR
+      operation: add
+    - what: case
+      name: wallR
+      operation: add
