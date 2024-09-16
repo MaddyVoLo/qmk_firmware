@@ -14,16 +14,11 @@
         "nkro": true
     },
     "matrix_pins": {
-        "cols": ["F6", "F7", "B1", "B3", "B2", "B6"],
-        "rows": ["C6", "D7", "E6", "B4", "B5"]
+        "cols": ["P19", "P18", "P15", "P14", "P16", "P10"],
+        "rows": ["P7", "P6", "P5", "P4", "P8"]
     },
-    "split": {
-        "enabled": true,
-        "serial": {
-            "pin": "P0"
-        }
-    },
-   
+
+
     "processor": "atmega32u4",
     "bootloader": "caterina",
     "layouts": {
