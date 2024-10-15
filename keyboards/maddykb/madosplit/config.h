@@ -20,3 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // Use the lily version to get the Lily58 logo instead of the qmk logo
 #define EE_HANDS
+#define SOFT_SERIAL_PIN D2
+#define MATRIX_ROW_PINS {D4, C6, D7, E6, B5, B4}
+
+#define MATRIX_COL_PINS { F6, F7, B1, B3, B2, B6}

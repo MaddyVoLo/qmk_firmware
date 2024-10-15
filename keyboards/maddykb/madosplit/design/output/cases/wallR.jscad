@@ -1,12 +1,12 @@
-function BigBoardR_extrude_4_outline_fn(){
-    return new CSG.Path2D([[362.0486716,-27.5099584],[399.5009018,-35.1728188]]).appendArc([401.1,-37.1322263],{"radius":2,"clockwise":true,"large":false}).appendPoint([401.1,-109.0375643]).appendArc([399.7064074,-110.9434158],{"radius":2,"clockwise":true,"large":false}).appendPoint([391.2250959,-113.6420149]).appendArc([391.1751197,-113.6586443],{"radius":2,"clockwise":false,"large":false}).appendPoint([352.4116071,-127.1264801]).appendArc([351.9773709,-127.2248822],{"radius":2,"clockwise":true,"large":false}).appendPoint([267.3340351,-136.6850709]).appendArc([265.1360957,-135.0076818],{"radius":2,"clockwise":true,"large":false}).appendPoint([259.6029428,-99.768742]).appendArc([259.5974131,-99.7312048],{"radius":2,"clockwise":true,"large":false}).appendPoint([250.3128014,-32.272698]).appendArc([252.2941231,-30],{"radius":2,"clockwise":true,"large":false}).appendPoint([282.8558548,-30]).appendArc([283.1426556,-29.9793295],{"radius":2,"clockwise":false,"large":false}).appendPoint([331.7048562,-22.9427657]).appendArc([332.2947809,-22.9451997],{"radius":2,"clockwise":true,"large":false}).appendPoint([361.9508938,-27.4924704]).appendArc([362.0486716,-27.5099584],{"radius":2,"clockwise":true,"large":false}).close().innerToCAG()
-.extrude({ offset: [0, 0, 4] });
+function BigBoardR_extrude_12_outline_fn(){
+    return new CSG.Path2D([[363.0824645,-26.5168295],[400.59992,-34.1734531]]).appendArc([402.2,-36.1330612],{"radius":2,"clockwise":true,"large":false}).appendPoint([402.2,-110.0393225]).appendArc([400.8085912,-111.9444778],{"radius":2,"clockwise":true,"large":false}).appendPoint([391.4323826,-114.9396555]).appendArc([391.3679887,-114.9614387],{"radius":2,"clockwise":false,"large":false}).appendPoint([353.4177851,-128.5221789]).appendArc([352.9702023,-128.6260644],{"radius":2,"clockwise":true,"large":false}).appendPoint([266.0788512,-138.4816132]).appendArc([263.8777949,-136.8054691],{"radius":2,"clockwise":true,"large":false}).appendPoint([258.2011017,-100.7569963]).appendArc([258.1988445,-100.7429861],{"radius":2,"clockwise":false,"large":false}).appendPoint([246.3830724,-29.025124]).appendArc([248.356469,-26.7],{"radius":2,"clockwise":true,"large":false}).appendPoint([281.9231142,-26.7]).appendArc([282.0766596,-26.6940972],{"radius":2,"clockwise":false,"large":false}).appendPoint([331.8059127,-22.8649447]).appendArc([332.1933265,-22.8727626],{"radius":2,"clockwise":true,"large":false}).appendPoint([362.9164129,-26.4901583]).appendArc([363.0824645,-26.5168295],{"radius":2,"clockwise":true,"large":false}).close().innerToCAG()
+.extrude({ offset: [0, 0, 12] });
 }
 
 
-function boardR_extrude_4_outline_fn(){
-    return new CSG.Path2D([[361.0507023,-28.5104005],[398.4018882,-36.1721822]]).appendArc([400,-38.1313876],{"radius":2,"clockwise":true,"large":false}).appendPoint([400,-108.0354508]).appendArc([398.6037834,-109.9421352],{"radius":2,"clockwise":true,"large":false}).appendPoint([391.0183173,-112.3441995]).appendArc([390.9817956,-112.356152],{"radius":2,"clockwise":false,"large":false}).appendPoint([351.4057304,-125.7304755]).appendArc([350.984142,-125.8237483],{"radius":2,"clockwise":true,"large":false}).appendPoint([268.5891041,-134.8887032]).appendArc([266.3944514,-133.2100161],{"radius":2,"clockwise":true,"large":false}).appendPoint([261.0080946,-98.8017086]).appendArc([260.994621,-98.6979388],{"radius":2,"clockwise":true,"large":false}).appendPoint([254.2278795,-33.2055478]).appendArc([256.217289,-31],{"radius":2,"clockwise":true,"large":false}).appendPoint([283.8569849,-31]).appendArc([284.1415597,-30.9796508],{"radius":2,"clockwise":false,"large":false}).appendPoint([331.7075367,-24.1420416]).appendArc([332.2921263,-24.1443227],{"radius":2,"clockwise":true,"large":false}).appendPoint([360.9488289,-28.4922361]).appendArc([361.0507023,-28.5104005],{"radius":2,"clockwise":true,"large":false}).close().innerToCAG()
-.extrude({ offset: [0, 0, 4] });
+function InnerWallOutlineR_extrude_12_outline_fn(){
+    return new CSG.Path2D([[361.5823181,-28.0168641],[398.9513944,-35.6725008]]).appendArc([400.55,-37.6318074],{"radius":2,"clockwise":true,"large":false}).appendPoint([400.55,-108.5365584]).appendArc([399.1551582,-110.442807],{"radius":2,"clockwise":true,"large":false}).appendPoint([391.1216411,-112.9931298]).appendArc([391.0785189,-113.0073602],{"radius":2,"clockwise":false,"large":false}).appendPoint([351.9086314,-126.4285146]).appendArc([351.4808061,-126.5243093],{"radius":2,"clockwise":true,"large":false}).appendPoint([267.9615847,-135.7868644]).appendArc([265.7652665,-134.108833],{"radius":2,"clockwise":true,"large":false}).appendPoint([260.3060009,-99.2882751]).appendArc([260.2954863,-99.2115245],{"radius":2,"clockwise":true,"large":false}).appendPoint([252.2619669,-30.7330308]).appendArc([254.2483447,-28.5],{"radius":2,"clockwise":true,"large":false}).appendPoint([283.4176656,-28.5]).appendArc([283.582056,-28.4932325],{"radius":2,"clockwise":false,"large":false}).appendPoint([331.7996268,-24.5165256]).appendArc([332.1996526,-24.5236876],{"radius":2,"clockwise":true,"large":false}).appendPoint([361.4165591,-27.9901002]).appendArc([361.5823181,-28.0168641],{"radius":2,"clockwise":true,"large":false}).close().innerToCAG()
+.extrude({ offset: [0, 0, 12] });
 }
 
 
@@ -16,7 +16,7 @@ function boardR_extrude_4_outline_fn(){
                     
 
                 // creating part 0 of case _outerWallR
-                let _outerWallR__part_0 = BigBoardR_extrude_4_outline_fn();
+                let _outerWallR__part_0 = BigBoardR_extrude_12_outline_fn();
 
                 // make sure that rotations are relative
                 let _outerWallR__part_0_bounds = _outerWallR__part_0.getBounds();
@@ -39,7 +39,7 @@ function boardR_extrude_4_outline_fn(){
                     
 
                 // creating part 0 of case _innerWallR
-                let _innerWallR__part_0 = boardR_extrude_4_outline_fn();
+                let _innerWallR__part_0 = InnerWallOutlineR_extrude_12_outline_fn();
 
                 // make sure that rotations are relative
                 let _innerWallR__part_0_bounds = _innerWallR__part_0.getBounds();
