@@ -1,0 +1,418 @@
+meta:
+    engine: 4.1.0
+units:
+  # Proxy Spacing Variables
+  kx: cx
+  ky: cy
+  # Padding Variables
+  px: kx + 2
+  py: ky + 2
+  step: .5
+  # Wall Padding Variable
+  wpx: kx + 3
+  wpy: ky + 3
+  # Double Padding Variables
+  dpx: kx + 6
+  dpy: ky + 6
+  # Defaults to M2 Screws
+  screwSize: 1.5
+  standoffSize: 2.5
+points:
+  zones:
+    Main_Board:
+      anchor:
+        shift: [100, -100]
+      key:
+        padding: 1ky+1
+        spread: 1kx+1
+      columns:
+        mod:
+          key.column_net: P19
+        pinky:
+          key.column_net: P18
+          key.stagger: 2
+          key.splay:
+        ring:
+          key.stagger: 6
+          key.column_net: P15
+        middle:
+          key.stagger: 2.5
+          key.column_net: P14
+        index:
+          key.stagger: -2.5
+          key.column_net: P16
+        inner:
+          key.stagger: -2.5
+          key.column_net: P10
+      rows:
+        bot:
+          row_net: P7
+        mid:
+          row_net: P6
+        top:
+          row_net: P5
+        num:
+          row_net: P4
+    reach:
+      anchor:
+        ref: Main_Board_inner_mid
+        shift: [1kx + 2step, -0.75ky]
+      columns:
+        reach:
+          key:
+            column_net: P10
+
+      rows:
+        reach:
+          rotate: 0
+          row_net: P8
+          key:
+
+    thumb:
+      anchor:
+        ref: Main_Board_inner_bot
+        shift: [-2.65kx, -1ky]
+      columns:
+        tucky1:
+          key:
+            stagger: -1
+            spread: kx+1
+            column_net: P15
+            #name: thumb_tucky1
+        tucky2:
+          key:
+            spread: kx+1
+            column_net: P14
+            name: thumb_tucky2
+        tucky3:
+          key:
+            stagger: -2
+            spread: kx+1
+            column_net: P16
+            name: thumb_tucky3
+        reachy:
+
+          key:
+            stagger: -4
+            shift: [0.35kx,1]
+            width: 1.5kx
+            rotate: -115
+            column_net: P10
+
+      rows:
+        stretch:
+          row_net: P9
+          key:
+            name: thumb
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [px, py]
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5,ky-0.5]
+  accuratekeys:
+    - what: rectangle
+      where: true
+      size: [13.80,13.80]
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: Main_Board_mod_num
+          shift: [-0.55px,0.5py]
+        - ref: Main_Board_mod_bot
+          shift: [-0.55px,-0.5py]
+        - ref: Main_Board_mod_bot
+          shift: [-0.1px,-0.65py]
+        - ref: thumb_tucky1_stretch
+          shift: [-0.5py,-0.7py]
+        - ref: thumb_reachy_stretch
+          shift: [0.55px,0.95py]
+        - ref: reach_reach_reach
+          shift: [0.7px,-0.5py]
+        - ref: Main_Board_inner_num
+          shift: [2px,0.5py]
+        - ref: Main_Board_inner_num
+          shift: [0.5px,0.5py]
+        - ref: Main_Board_middle_num
+          shift: [0,0.6py]
+        - ref: Main_Board_ring_num
+          shift: [-0.5px,0.5py]
+      fillet: 2
+  InnerWallOutlineL:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: Main_Board_mod_num
+          shift: [-0.55wpx,0.5wpy]
+        - ref: Main_Board_mod_bot
+          shift: [-0.55wpx,-0.5wpy]
+        - ref: Main_Board_mod_bot
+          shift: [-0.1wpx,-0.65wpy]
+        - ref: thumb_tucky1_stretch
+          shift: [-0.5wpy,-0.7wpy]
+        - ref: thumb_reachy_stretch
+          shift: [0.55wpx,0.95wpy]
+        - ref: reach_reach_reach
+          shift: [0.7wpx,-0.5wpy]
+        - ref: Main_Board_inner_num
+          shift: [2wpx,0.6wpy]
+        - ref: Main_Board_inner_num
+          shift: [0.5wpx,0.6wpy]
+        - ref: Main_Board_middle_num
+          shift: [0,0.55wpy]
+        - ref: Main_Board_ring_num
+          shift: [-0.5wpx,0.5wpy]
+      fillet: 2
+  BigBoardL:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: Main_Board_mod_num
+          shift: [-0.55dpx,0.5dpy]
+        - ref: Main_Board_mod_bot
+          shift: [-0.55dpx,-0.5dpy]
+        - ref: Main_Board_mod_bot
+          shift: [-0.1dpx,-0.65dpy]
+        - ref: thumb_tucky1_stretch
+          shift: [-0.5dpy,-0.7dpy]
+        - ref: thumb_reachy_stretch
+          shift: [0.55dpx,0.95dpy]
+        - ref: reach_reach_reach
+          shift: [0.7dpx,-0.5dpy]
+        - ref: Main_Board_inner_num
+          shift: [2dpx,0.6dpy]
+        - ref: Main_Board_inner_num
+          shift: [0.5dpx,0.6dpy]
+        - ref: Main_Board_middle_num
+          shift: [0,0.55dpy]
+        - ref: Main_Board_ring_num
+          shift: [-0.5dpx,0.5dpy]
+      fillet: 2
+  mounting:
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [Main_Board_pinky_num]
+        shift: [5, 0.68ky]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [Main_Board_pinky_bot]
+        shift: [9, -0.8ky]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [Main_Board_inner_bot]
+        shift: [4, -0.85ky]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [Main_Board_inner_num]
+        shift: [2+1.75kx,-0.7ky]
+    - what: circle
+      radius: screwSize
+      where:
+        ref: [Main_Board_middle_mid]
+        shift: [kx,-0.5ky]
+  standoff:
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [Main_Board_pinky_num]
+        shift: [5, 0.68ky]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [Main_Board_pinky_bot]
+        shift: [9, -0.8ky]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [Main_Board_inner_bot]
+        shift: [4, -0.85ky]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [Main_Board_inner_num]
+        shift: [2+1.75kx,-0.7ky]
+    - what: circle
+      radius: standoffSize
+      where:
+        ref: [Main_Board_middle_mid]
+        shift: [kx,-0.5ky]
+  boardGrid:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: Main_Board_mod_num
+          shift: [-0.55px,0.5py]
+        - ref: Main_Board_mod_bot
+          shift: [-0.55px,-0.5py]
+        - ref: Main_Board_mod_bot
+          shift: [-0.1px,-0.65py]
+        - ref: thumb_tucky1_stretch
+          shift: [-0.5py,-0.7py]
+        - ref: thumb_reachy_stretch
+          shift: [0.55px,0.95py]
+        - ref: reach_reach_reach
+          shift: [0.7px,-0.5py]
+        - ref: reach_reach_reach
+          shift: [0.5px, 0.5py]
+        - ref: Main_Board_inner_mid
+          shift: [0.5px,0]
+        - ref: Main_Board_inner_num
+          shift: [0.5px,0.5py]
+        - ref: Main_Board_middle_num
+          shift: [0,0.6py]
+        - ref: Main_Board_ring_num
+          shift: [-0.5px,0.5py]
+      fillet: 2
+  Combo:
+    - name: boardGrid
+    - operation: subtract
+      name: accuratekeys
+    - operation: subtract
+      name: mounting
+
+pcbs:
+  MadoSplit:
+    template: kicad8
+    outlines:
+      main:
+        outline: board
+    footprints:
+      choc_hotswap:
+        what: ceoloide/switch_choc_v1_v2
+        where: true
+        params:
+          reversible: true
+          hotswap: true
+          hotswap_3dmodel_filename: ${EG_INFUSED_KIM_3D_MODELS}/3d_models/Choc_V1_Hotswap.step
+          hotswap_3dmodel_xyz_rotation: [180,0,0]
+          hotswap_3dmodel_xyz_offset: [0,0,-1.5]
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+        adjust:
+          rotate: 180
+      diode:
+        what: ceoloide/diode_tht_sod123
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+          diode_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_SOD-123.step
+        adjust:
+          shift: [-7, 5]
+          rotate: 270
+      ProMicro:
+        what: ceoloide/mcu_supermini_nrf52840
+        params:
+          reverse_mount: true
+          reversible: true
+          mcu_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Arduino_Pro_Micro_Flipped.step
+          mcu_3dmodel_xyz_rotation: [0,0,90]
+          mcu_3dmodel_xyz_offset: [0,-1.25,0]
+        where:
+          ref: Main_Board_inner_num
+          shift: [2+kx,-0.5ky]
+
+      holeTopLeft:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: Main_Board_pinky_num
+          shift: [5, 0.68ky]
+      holeBotLeft:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: Main_Board_pinky_bot
+          shift: [9, -0.8ky]
+      holeBotRight:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: Main_Board_inner_bot
+          shift: [4, -0.85ky]
+      holeTopRight:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: Main_Board_inner_num
+          shift: [2+1.75kx,-0.7ky]
+      holeMiddle:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: [Main_Board_middle_mid]
+          shift: [0.5kx,-0.6ky]
+      TRRS:
+        what: ceoloide/trrs_pj320a
+        params:
+          TP: GND
+          R1: GND
+          R2: P0
+          SL: VCC
+        where:
+          ref: Main_Board_inner_num
+          shift: [1.9kx,0.55ky- 0.4]
+      Reset:
+        what: ceoloide/reset_switch_tht_top
+        params:
+          reversible: true
+          from: RST
+          to: GND
+        where:
+          ref: Main_Board_inner_num
+          shift: [1+1.75kx,-1.2ky]
+          rotate: 90
+      Oled:
+        what: oled
+        params:
+          side: "F"
+          SDA: P2
+          SCL: P3
+        where:
+          ref: Main_Board_inner_num
+          shift: [2+kx-6,-0.5ky-21]
+          rotate: 90
+
+cases:
+
+  xlBottom:
+    - name: BigBoardL
+      extrude: 1
+  _outerWall:
+    - name: BigBoardL
+      extrude: 5
+  _innerWall:
+    - name: InnerWallOutlineL
+      extrude: 5
+  wall:
+    - what: case
+      name: _outerWall
+      operation: add
+    - what: case
+      name: _innerWall
+      operation: subtract
+  _holes:
+    - name: mounting
+      extrude: 3
+  _standoffs:
+    - name: standoff
+      extrude: 3
+  case:
+    - what: case
+      name: _standoffs
+      operation: add
+    - what: case
+      name: _holes
+      operation: subtract
+    - what: case
+      name: xlBottom
+      operation: add
+    - what: case
+      name: wall
+      operation: add
+  gridKey:
+    - name: Combo
+      extrude: 2

@@ -558,10 +558,10 @@ cases:
       extrude: 1
   _outerWall:
     - name: BigBoardL
-      extrude: 12
+      extrude: 5
   _innerWall:
     - name: InnerWallOutlineL
-      extrude: 12
+      extrude: 5
   wall:
     - what: case
       name: _outerWall
@@ -571,10 +571,10 @@ cases:
       operation: subtract
   _holes:
     - name: mounting
-      extrude: 4
+      extrude: 3
   _standoffs:
     - name: standoff
-      extrude: 4
+      extrude: 3
   case:
     - what: case
       name: _standoffs
@@ -593,10 +593,10 @@ cases:
       extrude: 1
   _outerWallR:
     - name: BigBoardR
-      extrude: 12
+      extrude: 5
   _innerWallR:
     - name: InnerWallOutlineR
-      extrude: 12
+      extrude: 5
   wallR:
     - what: case
       name: _outerWallR
@@ -606,10 +606,10 @@ cases:
       operation: subtract
   _holesR:
     - name: mountingR
-      extrude: 4
+      extrude: 3
   _standoffsR:
     - name: standoffR
-      extrude: 4
+      extrude: 3
   caseR:
     - what: case
       name: _standoffsR
